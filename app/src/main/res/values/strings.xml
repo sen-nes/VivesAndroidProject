@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">FavoritesApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="synopsis">"In this world there exist alchemists, people who study and
+                                perform the art of alchemical transmutation—to manipulate objects and
+                                transform one object into another. They are bounded by the basic law of
+                                alchemy: in order to gain something you have to sacrifice something of
+                                he same value.
+                                The main character is the famous alchemist Edward Elric—also known as the Fullmetal
+                                Alchemist—who almost lost his little brother, Alphonse, in an alchemical accident.
+                                Edward managed to attach his brother's soul to a large suit of armor. While he did
+                                manage to save his brother's life, he paid the terrible price of his limbs.
+                                To get back what they've lost, the brothers embark on a journey to find the
+                                Philosopher's Stone that is said to amplify the powers of an alchemist enormously;
+                                however, on the way, they start uncovering a conspiracy that could endanger the
+                                entire nation, and they realize the misfortunes brought upon by the Philosopher's
+                                Stone.
+                                Fullmetal Alchemist: Brotherhood is a re-telling of the story from the manga's point of view."</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_search">Search</string>
+    <string name="title_details">Details</string>
+</resources>

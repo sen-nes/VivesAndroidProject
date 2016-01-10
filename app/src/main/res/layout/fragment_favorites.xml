@@ -1,0 +1,37 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/noFavoritesPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/favoritesIcon"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_favorite_black_24dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_below="@id/favoritesIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You don't have any favorite anime yet, search and add some"
+            android:textSize="26sp"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvFavorites"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:visibility="invisible"/>
+</LinearLayout>

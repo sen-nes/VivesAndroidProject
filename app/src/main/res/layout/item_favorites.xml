@@ -1,0 +1,135 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/ivCover"
+            android:layout_width="140dp"
+            android:layout_height="200dp"
+            android:src="@drawable/test"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:padding="3dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_toLeftOf="@+id/ivCover">
+
+            <RelativeLayout
+                android:id="@+id/titleSection"
+                android:layout_width="match_parent"
+                android:layout_height="101sp">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fullmetal Alchemist: Brotherhood"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:maxLines="3"
+                    android:ellipsize="end"/>
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Finished Airing"
+                    android:textSize="14sp"
+                    android:textColor="@color/textLight"
+                    android:layout_below="@id/tvTitle"
+                    android:paddingBottom="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/detailsSection"
+                android:layout_below="@id/titleSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvTypeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type: "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvType"
+                    android:layout_toRightOf="@id/tvTypeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TV"
+                    android:textColor="@color/textLight" />
+
+                <TextView
+                    android:id="@+id/tvEpisodesLabel"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toLeftOf="@id/tvEpisodes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episodes: "
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/tvEpisodes"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="64"
+                    android:textColor="@color/textLight"/>
+            </RelativeLayout>
+
+
+            <View
+                android:id="@+id/Divider"
+                android:layout_below="@id/detailsSection"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/Divider"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/tvScoreLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Score: "
+                    android:layout_below="@id/Divider"
+                    android:textStyle="bold"
+                    android:textSize="24sp"/>
+
+                <TextView
+                    android:id="@+id/tvScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.62"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24sp"
+                    android:layout_below="@+id/layout"
+                    android:layout_toRightOf="@+id/tvScoreLabel" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
